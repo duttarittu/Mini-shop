@@ -2,7 +2,7 @@ import { Facebook, LinkedIn, MailOutline, Phone, Pinterest, Room, Twitter, YouTu
 import styled from "styled-components";
 
 const Container = styled.div`
-    height: 40vh;
+    height: 30vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -11,14 +11,15 @@ const Container = styled.div`
 const Left = styled.div`  
     flex: 1;
 `
-const Logo = styled.h1`  
+const Logo = styled.h1`
+    margin-top: 15px;
 `
 const Desc = styled.p`
     margin: 20px 0px;
 `
 const IconContainer = styled.div`  
     display: flex;
-    margin-top: 10px;
+    margin-top: 15px;
 `
 const Icon = styled.div`
     width: 40px;
@@ -90,9 +91,6 @@ const Footer = () => {
                 non fugit, expedita, corporis sequi quod
                 optio animi quidem id consequatur
                 doloremque nihil voluptate quae.
-                Rem nemo possimus quasi at,
-                nisi magnam ullam quam? Iste
-                quisquam illo eaque.
             </Desc>
             <IconContainer>
 
