@@ -3,16 +3,6 @@ const User = require("../models/User");
 const { verifyTokenAndAuth, verifyTokenAndAdmin } = require("./verifyToken");
 const router = express.Router();
 
-// router.get("/usertest",(req,res) =>{
-//     res.send("user test is successful");
-// })
-
-// router.post("/userposttest",(req,res) => {
-//     const username = req.body.username;
-//     res.send("your user name is "+ username);
-// })
-
-
 //UPDATE
 router.put("/:id",verifyTokenAndAuth, async (req,res)=>{
     if(req.body.password){
